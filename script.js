@@ -1,4 +1,4 @@
-'use strict';
+
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -9,6 +9,7 @@
 
 // DIFFERENT DATA! Contains movement dates, currency and locale
 
+'use strict';
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
@@ -180,28 +181,6 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
-// Event handlers
-
-
-// Fake Always Logged in
-// currentAccount = account1;
-// updateUI(currentAccount);
-// containerApp.style.opacity = 100
-
-// Experimenting with the APi
-// const now = new Date()
-// const options = {
-//   hour: 'numeric',
-//   minute: 'numeric',
-//   day: 'numeric',
-//   month: 'long',
-//   year: 'numeric',
-//   weekday: 'long',
-// }
-// const locale = navigator.language
-// labelDate.textContent = new Intl.DateTimeFormat
-// ('en-US', options).format(now)
-
 let currentAccount, timer;
 
 const startLogOutTimer = function(){
@@ -361,6 +340,27 @@ btnSort.addEventListener('click', function (e) {
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
+// Event handlers
+
+
+// Fake Always Logged in
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100
+
+// Experimenting with the APi
+// const now = new Date()
+// const options = {
+//   hour: 'numeric',
+//   minute: 'numeric',
+//   day: 'numeric',
+//   month: 'long',
+//   year: 'numeric',
+//   weekday: 'long',
+// }
+// const locale = navigator.language
+// labelDate.textContent = new Intl.DateTimeFormat
+// ('en-US', options).format(now)
 
 
 // Create Date
